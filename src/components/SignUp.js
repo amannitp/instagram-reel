@@ -12,6 +12,8 @@ import Alert from "@mui/material/Alert";
 import "./signup.css";
 import { red } from "@mui/material/colors";
 import { height } from "@mui/system";
+
+import { Link } from "react-router-dom";
 export default function SignUp() {
   const useStyle = createUseStyles({
     text: {
@@ -66,7 +68,7 @@ export default function SignUp() {
               variant="outlined"
               margin="normal"
               fullWidth="true"
-              
+
             />
             <Button
               variant="outlined"
@@ -91,7 +93,7 @@ export default function SignUp() {
         </Card>
         <div>
           <Card sx={{ maxWidth: 345 }} className={classes.card2}>
-            <Typography>Have an account ? Log In</Typography>
+            <Typography>Have an account ? <Link to='/login' style={{textDecoration:'none'}}>Log In</Link></Typography>
           </Card>
         </div>
       </div>
